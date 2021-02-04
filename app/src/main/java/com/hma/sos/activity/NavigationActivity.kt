@@ -18,8 +18,8 @@ class NavigationActivity:AppCompatActivity() {
         }
     }
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation)
 
         botNavView.setOnNavigationItemSelectedListener {it->
@@ -35,7 +35,6 @@ class NavigationActivity:AppCompatActivity() {
         }
         botNavView.selectedItemId= R.id.bot_nav_home
     }
-
     private fun replaceFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction()
             .replace(R.id.containerMain,fragment)

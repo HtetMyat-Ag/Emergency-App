@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,6 +15,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:text="Emergency Call"
             android:textColor="@color/black"
             android:textSize="24sp"
@@ -22,22 +24,9 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnPolice"
-            style="@style/customButton"
-            android:background="@drawable/bg_btnemergency_color"
-            android:backgroundTint="#448aff"
-            android:drawableTop="@drawable/ic_badge"
-            android:paddingTop="32dp"
-            android:paddingBottom="16dp"
-            android:text="Police"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toStartOf="@id/btnFireStation"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvLabel" />
-
-        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnFireStation"
             style="@style/customButton"
+            android:layout_marginTop="24dp"
             android:background="@drawable/bg_btnemergency_color"
             android:backgroundTint="#ff9100"
             android:drawableTop="@drawable/ic_fire_extinguisher"
@@ -47,6 +36,22 @@
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnPolice"
+            app:layout_constraintTop_toBottomOf="@id/tvLabel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPolice"
+            style="@style/customButton"
+            android:layout_marginTop="24dp"
+
+            android:background="@drawable/bg_btnemergency_color"
+            android:backgroundTint="#448aff"
+            android:drawableTop="@drawable/ic_badge"
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp"
+            android:text="Police"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/btnFireStation"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLabel" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -75,7 +80,7 @@
         <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="165dp"
             android:background="@drawable/ic_plus_sign"
             app:layout_constraintEnd_toStartOf="@id/btnFireStation"
             app:layout_constraintHorizontal_bias="0.4"

@@ -23,13 +23,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.menu_settings -> settings()
+            R.id.menu_settings -> startActivity(NavigationActivity.newIntent(this))
         }
         return super.onOptionsItemSelected(item)
-    }
-
-    private fun settings() {
-        val intent = NavigationActivity.newIntent(this)
-        startActivity(intent)
     }
 }
