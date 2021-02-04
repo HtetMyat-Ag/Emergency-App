@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Emergency Call"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPolice"
+            style="@style/customButton"
+            android:background="@drawable/bg_btnemergency_color"
+            android:backgroundTint="#448aff"
+            android:drawableTop="@drawable/ic_badge"
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp"
+            android:text="Police"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/btnFireStation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFireStation"
+            style="@style/customButton"
+            android:background="@drawable/bg_btnemergency_color"
+            android:backgroundTint="#ff9100"
+            android:drawableTop="@drawable/ic_fire_extinguisher"
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp"
+            android:text="Fire &amp; Safety"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnPolice"
+            app:layout_constraintTop_toBottomOf="@id/tvLabel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHospital"
+            style="@style/customButton"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_btnemergency_color"
+            android:backgroundTint="#1de9b6"
+            android:drawableTop="@drawable/ic_caduceus"
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp"
+            android:text="Health Care"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/btnPolice"
+            app:layout_constraintTop_toBottomOf="@id/btnPolice" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSmth"
+            style="@style/customButton"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_btnemergency_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnHospital"
+            app:layout_constraintTop_toBottomOf="@id/btnFireStation" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/ic_plus_sign"
+            app:layout_constraintEnd_toStartOf="@id/btnFireStation"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toEndOf="@id/btnPolice"
+            app:layout_constraintTop_toBottomOf="@id/tvLabel" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnHospital"
+            android:background="@color/black"
+            />
+        <TextView
+            android:id="@+id/tvContactLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Contact Friends"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvContactLabel"
+            android:background="@color/black"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvContact"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/item_contact"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -5,44 +5,46 @@
         android:left="4dp"
         android:right="4dp"
         android:top="4dp">
-        <shape android:shape="oval">
-            <solid android:color="#ffebee" />
+        <shape android:shape="rectangle">
+            <solid android:color="#ff5252 " />
             <padding
                 android:bottom="8dp"
                 android:left="8dp"
                 android:right="8dp"
                 android:top="8dp" />
+            <corners android:radius="20dp"/>
         </shape>
     </item>
     <item
-        android:bottom="4dp"
-        android:left="4dp"
-        android:right="4dp"
-        android:top="4dp">
+        android:bottom="45dp"
+        android:left="33dp"
+        android:right="33dp"
+        android:top="24dp">
         <shape android:shape="oval">
-            <solid android:color="#ffcdd2" />
-            <padding
-                android:bottom="8dp"
-                android:left="8dp"
-                android:right="8dp"
-                android:top="8dp" />
+            <stroke
+                android:width="5dp"
+                android:color="#ffcdd2" />
+            <size android:height="100dp" android:width="100dp"/>
         </shape>
     </item>
     <item
-        android:bottom="8dp"
-        android:left="8dp"
-        android:right="8dp"
-        android:top="8dp">
+        android:bottom="50dp"
+        android:left="38dp"
+        android:right="38dp"
+        android:top="29dp"
+        >
         <shape android:shape="oval">
-            <solid android:color="#ff5252" />
+           <solid android:color="#ff1744"/>
+
             <padding
                 android:bottom="15dp"
                 android:left="15dp"
                 android:right="15dp"
                 android:top="15dp" />
+
             <size
-                android:width="60dp"
-                android:height="60dp" />
+                android:width="56dp"
+                android:height="56dp" />
         </shape>
     </item>
 </layer-list>
