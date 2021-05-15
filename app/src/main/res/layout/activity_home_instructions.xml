@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="INSTRUCTIONS"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#A3000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Register your emergency contact numbers under SETTING > REGISTER NUMBER"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/headline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="60dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="60dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/one"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="1"
+        android:textColor="#CAA620"
+        app:layout_constraintEnd_toEndOf="@id/start_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headline" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/two"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="2"
+        android:textColor="#4ED61D"
+        app:layout_constraintEnd_toEndOf="@id/start_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOne" />
+
+    <TextView
+        android:id="@+id/tvTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Press the SOS Widget or the SOS button on the homepage in case of an EMERGENCY. On pressing the buttom, an SOS message along with link of your CURRENT LOCATION on google maps will be sent to the registered numbers"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/tvOne" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/three"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="3"
+        android:textColor="#2B78D6"
+        app:layout_constraintEnd_toEndOf="@id/start_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTwo" />
+
+    <TextView
+        android:id="@+id/tvThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="We recommend you to always keep your GPS turned ON so that your device has enough information about your location in case of an emergency which in turn enables the app to fetch your location very quickly otherwise it may take few more seconds (not more than 10 sec)"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/tvTwo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/four"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="4"
+        android:textColor="#DD1414"
+        app:layout_constraintEnd_toEndOf="@id/start_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvThree" />
+
+    <TextView
+        android:id="@+id/tvFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="We recommend you to use SOS Alert Widget and always keep GPS turned ON so that you can send SOS Alert in just one tap."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/tvThree" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E653EFB0"
+        android:layout_marginBottom="16dp"
+        android:text="GOT IT"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
