@@ -42,7 +42,6 @@
             android:id="@+id/btnPolice"
             style="@style/customButton"
             android:layout_marginTop="24dp"
-
             android:background="@drawable/bg_btnemergency_color"
             android:backgroundTint="#448aff"
             android:drawableTop="@drawable/ic_badge"
@@ -73,6 +72,12 @@
             style="@style/customButton"
             android:layout_marginTop="16dp"
             android:background="@drawable/bg_btnemergency_color"
+            android:backgroundTint="#B57B1FA2"
+            android:drawableTop="@drawable/ic_map"
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp"
+            android:text="Map"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnHospital"
             app:layout_constraintTop_toBottomOf="@id/btnFireStation" />
@@ -86,16 +91,17 @@
             app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toEndOf="@id/btnPolice"
             app:layout_constraintTop_toBottomOf="@id/tvLabel" />
+
         <View
             android:id="@+id/view"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginTop="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnHospital"
             android:background="@color/black"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnHospital" />
+
         <TextView
             android:id="@+id/tvContactLabel"
             android:layout_width="0dp"
@@ -107,28 +113,28 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view" />
+
         <View
             android:id="@+id/view2"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvContactLabel"
             android:background="@color/black"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvContactLabel" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvContact"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:listitem="@layout/item_contact"/>
+            tools:listitem="@layout/item_contact" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
