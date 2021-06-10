@@ -15,7 +15,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="Emergency Call"
             android:textColor="@color/black"
             android:textSize="24sp"
@@ -26,7 +26,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnFireStation"
             style="@style/customButton"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/bg_btnemergency_color"
             android:backgroundTint="#ff9100"
             android:drawableTop="@drawable/ic_fire_extinguisher"
@@ -41,7 +41,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPolice"
             style="@style/customButton"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/bg_btnemergency_color"
             android:backgroundTint="#448aff"
             android:drawableTop="@drawable/ic_badge"
@@ -106,7 +106,7 @@
             android:id="@+id/tvContactLabel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:gravity="center"
             android:text="Contact Friends"
             android:textSize="24sp"
@@ -131,10 +131,12 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view2"
+            tools:itemCount="5"
             tools:listitem="@layout/item_contact" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
